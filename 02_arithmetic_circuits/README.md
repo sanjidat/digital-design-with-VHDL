@@ -1,9 +1,9 @@
-# Half Adder (2-input)
+# Half Adder
 
-Implements a simple 2-input Half Adder and its testbench.
+Implements a simple Half Adder and its testbench.
 
 ## Files
-- `half_adder.vhd` – VHDL code for the XOR gate
+- `half_adder.vhd` – VHDL code for the Half Adder structural, Dataflow and Behavioral 
 - `half_adder_tb.vhd` – Testbench for simulation
 
 ## Truth Table
@@ -14,6 +14,28 @@ Implements a simple 2-input Half Adder and its testbench.
 | 0 | 1 |      1      |       0       |
 | 1 | 0 |      1      |       0       |
 | 1 | 1 |      0      |       1       |
+
+
+# Full Adder
+
+Implements a simple Full Adder and its testbench.
+
+## Files
+- `fulladder.vhd` – VHDL code for the Full Adder structural, Dataflow and Behavioral 
+- `fulladder_tb.vhd` – Testbench for simulation
+
+## Truth Table
+
+| A | B | Cin | Sum | Cout |
+|---|---|-----|-----|------|
+| 0 | 0 |  0  |  0  |  0   |
+| 0 | 0 |  1  |  1  |  0   |
+| 0 | 1 |  0  |  1  |  0   |
+| 0 | 1 |  1  |  0  |  1   |
+| 1 | 0 |  0  |  1  |  0   |
+| 1 | 0 |  1  |  0  |  1   |
+| 1 | 1 |  0  |  0  |  1   |
+| 1 | 1 |  1  |  1  |  1   |
 
 
 ## How to Simulate
