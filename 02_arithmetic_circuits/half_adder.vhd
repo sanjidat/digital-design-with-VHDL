@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    17:31:51 04/29/2025 
+-- Create Date:    22:15:13 04/29/2025 
 -- Design Name: 
--- Module Name:    half_adder - Behavioral 
+-- Module Name:    half_adder - structural 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -36,24 +36,24 @@ entity half_adder is
            carry_out : out  STD_LOGIC);
 end half_adder;
 
-architecture Structural of half_adder is
+architecture structural of half_adder is
 
-	component xor_gate is 
-		port ( x : in STD_LOGIC;
-				 y : in STD_LOGIC;
-				 o : out STD_LOGIC);
+	component AND_gate is
+	 port ( i1 : in STD_LOGIC;
+				 i2 : in  STD_LOGIC;
+             o1 : out  STD_LOGIC);
 	end component;
-	
-	component and_gate is 
-		port ( i1 : in STD_LOGIC;
-				 i2 : in STD_LOGIC;
-				 o1 : out STD_LOGIC);
+
+	component xor_gate is
+    Port ( x : in  STD_LOGIC;
+           y : in  STD_LOGIC;
+           o : out  STD_LOGIC);
 	end component;
 
 begin
 
 	u1: xor_gate port map (x,y,sum);
-	u2: and_gate port map (x,y,carry_out);
-
-end Structural;
+	u2: AND_gate port map (x,y,carry_out);
+	
+end structural;
 

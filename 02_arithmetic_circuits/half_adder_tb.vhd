@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   17:51:16 04/29/2025
+-- Create Date:   00:16:43 04/30/2025
 -- Design Name:   
 -- Module Name:   /home/ise/vm/half_adder/half_adder_tb.vhd
 -- Project Name:  half_adder
@@ -60,7 +60,7 @@ ARCHITECTURE behavior OF half_adder_tb IS
    -- appropriate port name 
  
 --   constant <clock>_period : time := 10 ns;
--- 
+ 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -85,27 +85,27 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
+      wait for 100 ns;
 
 --      wait for <clock>_period*10;
 
       -- insert stimulus here 
 	x <= '0';
 	y <= '0';
-		wait for 100 ns;
+		wait for 100ns;
 		
 	x <= '0';
 	y <= '1';
-		wait for 100 ns;
-		
+		wait for 100ns;
+
 	x <= '1';
 	y <= '0';
-		wait for 100 ns;
+		wait for 100ns;
 		
 	x <= '1';
 	y <= '1';
-		wait for 100 ns;
-
+		wait for 100ns;
+		
       wait;
    end process;
 
