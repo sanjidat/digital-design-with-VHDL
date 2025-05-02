@@ -22,6 +22,6 @@ Implements a simple Full Adder and its testbench.
 
 ## How to Simulate
 Use Xilinx ISE, ModelSim, or Vivado:
-1. Compile both `.vhd` files
+1. Compile both ".vhd" files
 2. Run simulation
 3. Verify waveform
