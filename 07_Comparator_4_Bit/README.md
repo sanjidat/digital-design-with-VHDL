@@ -1,4 +1,4 @@
-# ?? 4-Bit Comparator � Modeling Styles
+# 🔍 4-Bit Comparator — Modeling Styles
 
 This module contains 3 implementations of a 4-bit comparator:
 
