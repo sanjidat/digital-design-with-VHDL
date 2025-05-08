@@ -10,6 +10,7 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - `E` = 1 if A = B
 - `L` = 1 if A < B
 
+```markdown
 ### 🧩 Design Summary
 
 - **VHDL Style**: Structural
