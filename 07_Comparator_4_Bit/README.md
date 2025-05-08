@@ -36,3 +36,6 @@ Explore each folder to see how the same logic can be modeled in different ways!
 │ ├── comparator_4bit_dataflow_tb.vhd
 │ └── README.md
 └── README.md
+
+🧑‍💻 Author
+Sanjida Orin Tawhid

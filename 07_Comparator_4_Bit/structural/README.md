@@ -53,3 +53,6 @@ The testbench applies various input combinations to verify the comparator's func
 - Gained hands-on experience in structural VHDL design.
 - Understood the implementation of basic logic gates and their integration into a larger system.
 - Learned to create and utilize testbenches for verifying digital designs.
+
+🧑‍💻 Author
+Sanjida Orin Tawhid
