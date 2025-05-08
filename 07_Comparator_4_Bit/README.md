@@ -36,3 +36,5 @@ Explore each folder to see how the same logic can be modeled in different ways!
 │   ├── comparator_4bit_dataflow_tb.vhd
 │   └── README.md
 └── README.md
+
+<pre> ```plaintext 📂 Files 07_Comparator_4_Bit/ ├── structural/ │ ├── comparator_4bit.vhd # Top-level structural comparator │ ├── components/ │ │ ├── and_gate.vhd # 2-input AND gate component │ │ ├── and3_gate.vhd # 3-input AND gate component │ │ ├── and4_gate.vhd # 4-input AND gate component │ │ ├── and5_gate.vhd # 5-input AND gate component │ │ ├── not_gate.vhd # NOT gate component │ │ ├── or4_gate.vhd # 4-input OR gate component │ │ ├── xnor_gate.vhd # XNOR gate component │ ├── comparator_4bit_tb.vhd # Testbench │ └── README.md ├── behavioral/ │ ├── comparator_4bit_behavioral.vhd │ ├── comparator_4bit_behavioral_tb.vhd │ └── README.md ├── dataflow/ │ ├── comparator_4bit_dataflow.vhd │ ├── comparator_4bit_dataflow_tb.vhd │ └── README.md └── README.md ``` </pre>
