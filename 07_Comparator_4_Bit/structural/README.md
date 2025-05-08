@@ -1,23 +1,23 @@
-## ?? 4-Bit Comparator
+# 🔍 4-Bit Comparator
 
 # 4-Bit Comparator (Structural VHDL - Xilinx ISE)
 This project implements a **4-bit digital comparator** in **structural VHDL**, using basic logic gate components like `XNOR`, `AND`, `NOT`, and `OR`. The design was created and simulated using **Xilinx ISE**.
 
-### ?? Objective
+### 🎯 Objective
 
 Compare two 4-bit binary numbers (`A` and `B`) and output:
 - `G` = 1 if A > B
 - `E` = 1 if A = B
 - `L` = 1 if A < B
 
-### ?? Design Summary
+### 🧩 Design Summary
 
 - **VHDL Style**: Structural
 - **Components Used**: NOT, AND (2- to 5-input), OR4, XNOR
 - **Tools**: Xilinx ISE, ISim
 - **Testbench**: Included and simulates multiple input cases
 
-### ?? Files
+### 📂 Files
 
 07_Comparator_4_Bit/
 ??? comparator_4bit.vhd # Top-level structural comparator
@@ -31,7 +31,7 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 ??? comparator_4bit_tb.vhd # Testbench for simulation
 
 
-## ?? Simulation Results
+## 🧪 Simulation Results
 
 The testbench applies various input combinations to verify the comparator's functionality. Below are some sample results:
 
@@ -46,7 +46,7 @@ The testbench applies various input combinations to verify the comparator's func
 | 1110  | 1110  | 0 | 1 | 0 |
 | 1100  | 0101  | 1 | 0 | 0 |
 
-## ?? Learnings
+## 📝 Learnings
 
 - Gained hands-on experience in structural VHDL design.
 - Understood the implementation of basic logic gates and their integration into a larger system.
