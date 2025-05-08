@@ -1,5 +1,5 @@
 # 🔍 4-Bit Comparator — Modeling Styles
-
+```markdown
 This module contains 3 implementations of a 4-bit comparator:
 
 | Modeling Style | Description                                  |
