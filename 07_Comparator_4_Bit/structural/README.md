@@ -18,19 +18,21 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - **Tools**: Xilinx ISE, ISim
 - **Testbench**: Included and simulates multiple input cases
 
-### 📂 Files
+# 📂 Files
 
 07_Comparator_4_Bit/
-??? comparator_4bit.vhd # Top-level structural comparator
-??? not_gate.vhd # NOT gate component
-??? and_gate.vhd # 2-input AND gate component
-??? and3_gate.vhd # 3-input AND gate component
-??? and4_gate.vhd # 4-input AND gate component
-??? and5_gate.vhd # 5-input AND gate component
-??? or4_gate.vhd # 4-input OR gate component
-??? xnor_gate.vhd # XNOR gate component
-??? comparator_4bit_tb.vhd # Testbench for simulation
-
+├── structural/
+│ ├── comparator_4bit.vhd # Top-level structural comparator
+│ ├── components/
+│ │ ├── and_gate.vhd # 2-input AND gate component
+│ │ ├── and3_gate.vhd # 3-input AND gate component
+│ │ ├── and4_gate.vhd # 4-input AND gate component
+│ │ ├── and5_gate.vhd # 5-input AND gate component
+│ │ ├── not_gate.vhd # NOT gate component
+│ │ ├── or4_gate.vhd # 4-input OR gate component
+│ │ ├── xnor_gate.vhd # XNOR gate component
+│ ├── comparator_4bit_tb.vhd # Testbench
+│ └── README.md
 
 ## 🧪 Simulation Results
 
