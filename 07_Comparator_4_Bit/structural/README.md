@@ -1,5 +1,5 @@
 # 🔍 4-Bit Comparator
-
+```markdown
 # 4-Bit Comparator (Structural VHDL - Xilinx ISE)
 This project implements a **4-bit digital comparator** in **structural VHDL**, using basic logic gate components like `XNOR`, `AND`, `NOT`, and `OR`. The design was created and simulated using **Xilinx ISE**.
 
@@ -10,7 +10,6 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - `E` = 1 if A = B
 - `L` = 1 if A < B
 
-```markdown
 ### 🧩 Design Summary
 
 - **VHDL Style**: Structural
