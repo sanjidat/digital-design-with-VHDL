@@ -22,7 +22,7 @@ and_gate/
 ├── and_gate_waveform.png # AND gate Waveform
 
 ▶️ How to Simulate
-Open your preferred VHDL simulator (e.g., ModelSim, Vivado, GHDL).
+Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
 Add both .vhd files to your project.
 Run the simulation on and_gate_tb.
 Observe the output waveform or console results.
