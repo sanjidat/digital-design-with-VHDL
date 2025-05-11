@@ -1,5 +1,5 @@
 # 🧮 4-bit Binary to BCD Converter (VHDL)
-
+```markdown
 This project implements a simple **4-bit binary to BCD (Binary-Coded Decimal)** converter using VHDL. It includes both the behavioral module and a testbench for simulation and verification.
 
 ---
