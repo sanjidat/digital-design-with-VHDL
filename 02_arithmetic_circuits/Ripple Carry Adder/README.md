@@ -33,7 +33,7 @@ This project includes the design of the RCA for adding two 4-bit binary numbers.
 | 1111        | 1111        | 1   | 1111                | 1    |
 
 # 📁 Project Structure
-and_gate/
+Ripple Carry Adder/
 ├── rca_behavioral.vhd # Ripple Carry Adder Behavioral Module VHDL code
 ├── rca_behavioral_tb.vhd # Testbench for Ripple Carry Adder Behavioral Module simulation 
 ├── rca_behavioral.png # Ripple Carry Adder Behavioral Module Waveform
