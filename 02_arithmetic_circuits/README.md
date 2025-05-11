@@ -3,21 +3,21 @@
 ## 🔍 Overview
 This repository contains implementations of fundamental arithmetic circuits used in digital systems. The following circuits are included in this folder:
 
-Half Adder: A circuit that adds two single-bit binary numbers, producing a sum and a carry-out.
+# Half Adder: A circuit that adds two single-bit binary numbers, producing a sum and a carry-out.
 
-Full Adder: A circuit that adds two single-bit binary numbers and a carry-in, producing a sum and a carry-out.
+# Full Adder: A circuit that adds two single-bit binary numbers and a carry-in, producing a sum and a carry-out.
 
-Ripple Carry Adder (RCA): A circuit that adds two multi-bit binary numbers using multiple full adders in a ripple fashion.
+# Ripple Carry Adder (RCA): A circuit that adds two multi-bit binary numbers using multiple full adders in a ripple fashion.
 
 These modules are provided in three different architectural styles for each adder: Structural, Behavioral, and Dataflow.
 
 The three styles showcase different VHDL design approaches:
 
-Structural: This approach explicitly instantiates lower-level components (like gates or smaller modules) and connects them together.
+# Structural: This approach explicitly instantiates lower-level components (like gates or smaller modules) and connects them together.
 
-Behavioral: Describes the functionality of the circuit using high-level operations without focusing on specific hardware implementation.
+# Behavioral: Describes the functionality of the circuit using high-level operations without focusing on specific hardware implementation.
 
-Dataflow: Describes how data moves through the system using concurrent signal assignments.
+# Dataflow: Describes how data moves through the system using concurrent signal assignments.
 
 These adders are essential building blocks for more complex arithmetic operations in digital electronics.
 
@@ -34,7 +34,7 @@ Full Adder/
 ├── fulladder_structural.vhd     # Full Adder structural Module VHDL code
 ├── fulladder_structural_tb.vhd  # Testbench for Full Adder structural Module simulation 
 ├── fulladder_structural.png     # Full Adder structural Module Waveform
-Full Adder/
+Half Adder/
 ├── half_adder_behavioral.vhd    # Half Adder Behavioral Module VHDL code
 ├── half_adder_behavioral_tb.vhd # Testbench for Half Adder Behavioral Module simulation 
 ├── half_adder_behavioral.png    # Half Adder Behavioral Module Waveform
