@@ -1,7 +1,7 @@
 # 🔍 4-Bit Comparator
 ```markdown
-# 4-Bit Comparator (Structural VHDL - Xilinx ISE)
-This project implements a **4-bit digital comparator** in **structural VHDL**, using basic logic gate components like `XNOR`, `AND`, `NOT`, and `OR`. The design was created and simulated using **Xilinx ISE**.
+# 4-Bit Comparator — Behavioral Modeling 
+This module implements a 4-bit comparator using **behavioral modeling** in VHDL. It determines whether one 4-bit binary input is greater than, equal to, or less than another input using a process-based approach.
 
 ### 🎯 Objective
 
@@ -9,6 +9,33 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - `G` = 1 if A > B
 - `E` = 1 if A = B
 - `L` = 1 if A < B
+
+## 🔧 Module Overview
+
+### 📥 Inputs:
+- `A`: 4-bit input vector (`std_logic_vector(3 downto 0)`)
+- `B`: 4-bit input vector (`std_logic_vector(3 downto 0)`)
+
+### 📤 Outputs:
+- `G`: High (`'1'`) if `A > B`
+- `E`: High (`'1'`) if `A = B`
+- `L`: High (`'1'`) if `A < B`
+
+## 🧠 Implementation
+
+This version uses a `process` block with `if-elsif-else` statements to describe behavior:
+
+```vhdl
+process (A, B)
+begin
+    if (A > B) then 
+        G <= '1'; E <= '0'; L <= '0';
+    elsif (A = B) then 
+        E <= '1'; G <= '0'; L <= '0';
+    else
+        L <= '1'; E <= '0'; G <= '0';
+    end if;
+end process;
 
 ### 🧩 Design Summary
 
@@ -20,36 +47,34 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 # 📂 Files
 
 07_Comparator_4_Bit/
-├── structural/
-│ ├── comparator_4bit.vhd # Top-level structural comparator
-│ ├── components/
-│ │ ├── and_gate.vhd # 2-input AND gate component
-│ │ ├── and3_gate.vhd # 3-input AND gate component
-│ │ ├── and4_gate.vhd # 4-input AND gate component
-│ │ ├── and5_gate.vhd # 5-input AND gate component
-│ │ ├── not_gate.vhd # NOT gate component
-│ │ ├── or4_gate.vhd # 4-input OR gate component
-│ │ ├── xnor_gate.vhd # XNOR gate component
-│ ├── comparator_4bit_tb.vhd # Testbench
-│ └── README.md
+├── behavioral/
+├── comparator_4bit_behavioral.vhd -- Behavioral architecture of the comparator
+├── comparator_4bit_behavioral_tb.vhd -- Testbench for simulating and verifying the design
+└── README.md -- This documentation
 
 ## 🧪 Simulation Results
 
-The testbench applies various input combinations to verify the comparator's functionality. Below are some sample results:
+## 🔬 Testbench Summary
 
-| A     | B     | G | E | L |
-|-------|-------|---|---|---|
-| 0100  | 1000  | 0 | 0 | 1 |
-| 0000  | 0000  | 0 | 1 | 0 |
-| 1100  | 1000  | 1 | 0 | 0 |
-| 0110  | 0010  | 1 | 0 | 0 |
-| 1111  | 1111  | 0 | 1 | 0 |
-| 0001  | 0000  | 1 | 0 | 0 |
-| 1110  | 1110  | 0 | 1 | 0 |
-| 1100  | 0101  | 1 | 0 | 0 |
+The testbench (`comparator_4bit_behavioral_tb.vhd`) drives various combinations of inputs and monitors the outputs. It validates that the comparator behaves as expected in all cases.
+
+### ✅ Sample Simulation Results
+
+|   A    |   B    | G | E | L |
+|--------|--------|---|---|---|
+| 0101   | 1000   | 0 | 0 | 1 |
+| 1101   | 1100   | 1 | 0 | 0 |
+| 1010   | 1010   | 0 | 1 | 0 |
+| 1111   | 1101   | 1 | 0 | 0 |
+| 0001   | 1001   | 0 | 0 | 1 |
 
 ## 📝 Learnings
 
 - Gained hands-on experience in structural VHDL design.
 - Understood the implementation of basic logic gates and their integration into a larger system.
 - Learned to create and utilize testbenches for verifying digital designs.
+
+## 👩‍💻 Author
+
+Sanjida Orin Tawhid
+
