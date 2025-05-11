@@ -1,24 +1,17 @@
-# Digital Design with VHDL – Learning Portfolio
+# Binary to Gray Code Converter (VHDL)
 
-This repository is my collection of hands-on projects and exercises from the **"Design of Digital Circuits with VHDL Programming"** course.
+This project implements a **4-bit Binary to Gray Code converter** using VHDL, along with a testbench to verify functionality.
 
-The repo includes:
-- VHDL code for various digital circuits
-- Testbenches to verify functionality
-- Simulations and results
+## 🧠 What is Gray Code?
 
-## Topics Covered
+Gray Code is a binary numeral system where two successive values differ by only one bit. It's commonly used in digital encoders, error correction, and analog to digital conversion to prevent spurious outputs.
 
-| Module                        | Description                     | Status |
-|-------------------------------|---------------------------------|--------|
-| 01 – Basic Gates              | AND, OR, NOT, XOR               | 🔄 In Progress |
-| 02 – Arithmetic Circuits      | Half Adder, Full Adder          | ⬜ Todo |
-| 03 – Multiplexers & Demux     | 2:1 MUX, 4:1 MUX, Demux         | ⬜ Todo |
-| 04 – Flip-Flops               | D Flip-Flop, T Flip-Flop        | ⬜ Todo |
-| 05 – Counters                 | 4-bit counter, Modulo-N counter | ⬜ Todo |
-| 06 – FSM Design               | Vending machine, Traffic light  | ⬜ Todo |
+## 📁 Project Structure
 
----
+09_Binary_to_GrayCode/
+├── binary_to_gray_code.vhd # Main VHDL module (Behavioral architecture)
+├── binary_to_gray_code_tb.vhd # Testbench for simulation
+├── binary to gray code Waveform.png # Waveform
 
 ### How to Run Simulations
 
@@ -31,8 +24,40 @@ For each project, you’ll find:
 
 ## Tools Used
 - VHDL (IEEE STD_LOGIC_1164)
-- ModelSim / Vivado (Simulation tools)
+- Xilinx ISE/ ISIM (Simulation tools)
 
----
+## ⚙️ How It Works
+
+Given a 4-bit binary input, the module converts it to 4-bit Gray Code using the formula:
+
+```vhdl
+gray(3) <= bin(3);
+gray(2) <= bin(3) xor bin(2);
+gray(1) <= bin(2) xor bin(1);
+gray(0) <= bin(1) xor bin(0);
+
+🧪 Simulation
+The testbench applies various input values and checks the output:
+
+Binary Input	Expected Gray Code
+0000	0000
+0001	0001
+0010	0011
+0100	0110
+1010	1111
+1100	1010
+
+Use ModelSim, Vivado, or GHDL to run the simulation.
+
+✅ How to Run
+Open your VHDL simulator.
+Add binary_to_gray_code.vhd and binary_to_gray_code_tb.vhd to the project.
+Compile and run the testbench.
+Observe waveforms or simulation logs.
+
+🛠️ Requirements VHDL simulator (Xilinx ISE, ISIM)
+Basic knowledge of digital logic and VHDL
+
+🙋‍♀️ Author Developed by Sanjida Orin Tawhid
 
 More modules will be added as I progress through the course.
