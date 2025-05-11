@@ -1,5 +1,5 @@
 # AND Gate (VHDL)
-
+```markdown
 This project implements a basic **2-input AND Gate** using VHDL, along with a testbench to simulate and verify its functionality.
 
 ## 🔧 Description
