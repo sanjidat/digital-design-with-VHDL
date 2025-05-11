@@ -15,8 +15,7 @@ An AND gate is a basic digital logic gate that outputs `1` only when **both inpu
 | 1 | 0 |   0    |
 | 1 | 1 |   1    |
 
-## 📁 Project Structure
-
+# 📁 Project Structure
 and_gate/
 ├── and_gate.vhd # AND gate VHDL code
 ├── and_gate_tb.vhd # Testbench for simulation
