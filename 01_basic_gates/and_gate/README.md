@@ -1,38 +1,37 @@
-# Digital Design with VHDL – Learning Portfolio
+# AND Gate (VHDL)
 
-This repository is my collection of hands-on projects and exercises from the **"Design of Digital Circuits with VHDL Programming"** course.
+This project implements a basic **2-input AND Gate** using VHDL, along with a testbench to simulate and verify its functionality.
 
-The repo includes:
-- VHDL code for various digital circuits
-- Testbenches to verify functionality
-- Simulations and results
+## 🔧 Description
 
-## Topics Covered
+An AND gate is a basic digital logic gate that outputs `1` only when **both inputs** are `1`. Otherwise, it outputs `0`.
 
-| Module                        | Description                     | Status |
-|-------------------------------|---------------------------------|--------|
-| 01 – Basic Gates              | AND, OR, NOT, XOR               | 🔄 In Progress |
-| 02 – Arithmetic Circuits      | Half Adder, Full Adder          | ⬜ Todo |
-| 03 – Multiplexers & Demux     | 2:1 MUX, 4:1 MUX, Demux         | ⬜ Todo |
-| 04 – Flip-Flops               | D Flip-Flop, T Flip-Flop        | ⬜ Todo |
-| 05 – Counters                 | 4-bit counter, Modulo-N counter | ⬜ Todo |
-| 06 – FSM Design               | Vending machine, Traffic light  | ⬜ Todo |
+### Truth Table
 
----
+| A | B | Output |
+|---|---|--------|
+| 0 | 0 |   0    |
+| 0 | 1 |   0    |
+| 1 | 0 |   0    |
+| 1 | 1 |   1    |
 
-### How to Run Simulations
+## 📁 Project Structure
 
-For each project, you’ll find:
-- A `.vhd` file with the digital circuit
-- A corresponding testbench file (`_tb.vhd`)
-- Instructions to run the simulation (usually via ModelSim or Vivado)
+and_gate/
+├── and_gate.vhd # AND gate VHDL code
+├── and_gate_tb.vhd # Testbench for simulation
+├── and_gate_waveform.png # AND gate Waveform
 
----
+▶️ How to Simulate
+Open your preferred VHDL simulator (e.g., ModelSim, Vivado, GHDL).
+Add both .vhd files to your project.
+Run the simulation on and_gate_tb.
+Observe the output waveform or console results.
 
 ## Tools Used
 - VHDL (IEEE STD_LOGIC_1164)
-- ModelSim / Vivado (Simulation tools)
+- Xilinx ISE / ISIM (Simulation tools)
 
----
+🙋‍♀️ Author Developed by Sanjida Orin Tawhid
 
 More modules will be added as I progress through the course.
