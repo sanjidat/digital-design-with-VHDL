@@ -1,5 +1,5 @@
 # Binary to Gray Code Converter (VHDL)
-
+```markdown
 This project implements a **4-bit Binary to Gray Code converter** using VHDL, along with a testbench to verify functionality.
 
 ## 🧠 What is Gray Code?
