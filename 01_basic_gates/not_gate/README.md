@@ -1,25 +1,24 @@
-# AND Gate (VHDL)
+# NOT Gate (VHDL)
 ```markdown
-This project implements a basic **2-input AND Gate** using VHDL, along with a testbench to simulate and verify its functionality.
+This project demonstrates a basic **NOT Gate** (Inverter) designed in VHDL. It includes both the implementation of the NOT gate and a testbench for simulation.
 
-## 🔧 Description
+## 🧠 What is a NOT Gate?
 
-An AND gate is a basic digital logic gate that outputs `1` only when **both inputs** are `1`. Otherwise, it outputs `0`.
+A **NOT Gate** is a digital logic gate that inverts its input. If the input is `1`, the output will be `0`, and if the input is `0`, the output will be `1`. It is also known as an **Inverter**.
 
-### Truth Table
+### 🔍 Truth Table
 
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 |   0    |
-| 0 | 1 |   0    |
-| 1 | 0 |   0    |
-| 1 | 1 |   1    |
+| A | Output (Y) |
+|---|-------------|
+| 0 |     1       |
+| 1 |     0       |
 
 # 📁 Project Structure
-and_gate/
-├── and_gate.vhd # AND gate VHDL code
-├── and_gate_tb.vhd # Testbench for simulation
-├── and_gate_waveform.png # AND gate Waveform
+not_gate/
+├── not_gate.vhd # VHDL code for the NOT gate
+├── not_gate_tb.vhd # Testbench file for simulation
+├── not_gate_waveform.png # NOT gate Waveform
+
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
