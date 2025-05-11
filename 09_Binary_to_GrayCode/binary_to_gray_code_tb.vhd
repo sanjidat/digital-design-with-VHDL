@@ -32,17 +32,17 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY binary_to_grey_code_tb IS
-END binary_to_grey_code_tb;
+ENTITY binary_to_gray_code_tb IS
+END binary_to_gray_code_tb;
  
-ARCHITECTURE behavior OF binary_to_grey_code_tb IS 
+ARCHITECTURE behavior OF binary_to_gray_code_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT binary_to_grey_code
+    COMPONENT binary_to_gray_code
     PORT(
          bin : IN  std_logic_vector(3 downto 0);
-         grey_code : OUT  std_logic_vector(3 downto 0)
+         gray_code : OUT  std_logic_vector(3 downto 0)
         );
     END COMPONENT;
     
@@ -51,7 +51,7 @@ ARCHITECTURE behavior OF binary_to_grey_code_tb IS
    signal bin : std_logic_vector(3 downto 0) := (others => '0');
 
  	--Outputs
-   signal grey_code : std_logic_vector(3 downto 0);
+   signal gray_code : std_logic_vector(3 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -60,9 +60,9 @@ ARCHITECTURE behavior OF binary_to_grey_code_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: binary_to_grey_code PORT MAP (
+   uut: binary_to_gray_code PORT MAP (
           bin => bin,
-          grey_code => grey_code
+          gray_code => gray_code
         );
 
    -- Clock process definitions

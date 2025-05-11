@@ -29,17 +29,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity binary_to_grey_code is
+entity binary_to_gray_code is
     Port ( bin : in  STD_LOGIC_VECTOR (3 downto 0);
-           grey_code : out  STD_LOGIC_VECTOR (3 downto 0));
-end binary_to_grey_code;
+           gray_code : out  STD_LOGIC_VECTOR (3 downto 0));
+end binary_to_gray_code;
 
-architecture Behavioral of binary_to_grey_code is
+architecture Behavioral of binary_to_gray_code is
 
 begin
-	grey_code(0) <= bin(0) xor bin(1);
-	grey_code(1) <= bin(1) xor bin(2);
-	grey_code(2) <= bin(2) xor bin(3);
-	grey_code(3) <= bin(3);
+	gray_code(3) <= bin(3);
+	gray_code(2) <= bin(2) xor bin(3);
+	gray_code(1) <= bin(1) xor bin(2);
+	gray_code(0) <= bin(0) xor bin(1);
 end Behavioral;
 
