@@ -1,38 +1,48 @@
-# Digital Design with VHDL – Learning Portfolio
+# 🧮 4-bit Binary to BCD Converter (VHDL)
 
-This repository is my collection of hands-on projects and exercises from the **"Design of Digital Circuits with VHDL Programming"** course.
-
-The repo includes:
-- VHDL code for various digital circuits
-- Testbenches to verify functionality
-- Simulations and results
-
-## Topics Covered
-
-| Module                        | Description                     | Status |
-|-------------------------------|---------------------------------|--------|
-| 01 – Basic Gates              | AND, OR, NOT, XOR               | 🔄 In Progress |
-| 02 – Arithmetic Circuits      | Half Adder, Full Adder          | ⬜ Todo |
-| 03 – Multiplexers & Demux     | 2:1 MUX, 4:1 MUX, Demux         | ⬜ Todo |
-| 04 – Flip-Flops               | D Flip-Flop, T Flip-Flop        | ⬜ Todo |
-| 05 – Counters                 | 4-bit counter, Modulo-N counter | ⬜ Todo |
-| 06 – FSM Design               | Vending machine, Traffic light  | ⬜ Todo |
+This project implements a simple **4-bit binary to BCD (Binary-Coded Decimal)** converter using VHDL. It includes both the behavioral module and a testbench for simulation and verification.
 
 ---
 
-### How to Run Simulations
+## 📁 Files
 
-For each project, you’ll find:
-- A `.vhd` file with the digital circuit
-- A corresponding testbench file (`_tb.vhd`)
-- Instructions to run the simulation (usually via ModelSim or Vivado)
+- `binary_to_bcd.vhd` – Main VHDL module that converts 4-bit binary to BCD.
+- `binary_to_bcd_tb.vhd` – Testbench for simulating and verifying the design.
+- `binary_to_bcd.png` – Waveform.
 
----
+## 📘 Description
 
-## Tools Used
-- VHDL (IEEE STD_LOGIC_1164)
-- ModelSim / Vivado (Simulation tools)
+This module takes a 4-bit binary number as input (`bin`) and outputs the equivalent BCD value using two 4-bit outputs: `tens` and `ones`. It also combines these into an 8-bit output (`bcd_output`).
 
----
+🔁 Operation
+Convert binary input to an integer.
+
+Compute:
+
+tens = value / 10
+
+ones = value mod 10
+
+Convert both digits back to std_logic_vector.
+
+Concatenate for final 8-bit BCD output.
+
+🧪 Simulation
+Run the testbench (binary_to_bcd_tb.vhd) using any VHDL simulator (like ModelSim or Vivado). It will apply a range of inputs from 0 to 15 and show corresponding BCD outputs.
+
+| Binary Input | Decimal | Tens   | Ones   | BCD Output |
+| ------------ | ------- | ------ | ------ | ---------- |
+| `0111`       | 7       | `0000` | `0111` | `00000111` |
+| `1010`       | 10      | `0001` | `0000` | `00010000` |
+| `1100`       | 12      | `0001` | `0010` | `00010010` |
+
+🛠️ Requirements
+VHDL simulator (Xilinx ISE, ISIM)
+
+Basic knowledge of digital logic and VHDL
+
+
+🙋‍♀️ Author
+Developed by Sanjida Orin Tawhid
 
 More modules will be added as I progress through the course.
