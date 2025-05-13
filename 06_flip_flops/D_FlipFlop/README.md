@@ -1,25 +1,30 @@
-# AND Gate (VHDL)
+# D Flip-Flop (DFF) in VHDL
 ```markdown
-This project implements a basic **2-input AND Gate** using VHDL, along with a testbench to simulate and verify its functionality.
+This repository contains the VHDL implementation of a **D Flip-Flop**, one of the fundamental building blocks in digital electronics used for edge-triggered data storage.
 
-## 🔧 Description
+## 🧠 What is a D Flip-Flop?
 
-An AND gate is a basic digital logic gate that outputs `1` only when **both inputs** are `1`. Otherwise, it outputs `0`.
+A **D Flip-Flop** (Data or Delay Flip-Flop) stores and transfers the value of the input `D` to the output `Q` **only on the rising (or falling) edge** of a clock signal. It is widely used in registers, counters, and memory elements.
+
 
 ### Truth Table
 
-| A | B | Output |
-|---|---|--------|
-| 0 | 0 |   0    |
-| 0 | 1 |   0    |
-| 1 | 0 |   0    |
-| 1 | 1 |   1    |
+| Clock Edge | D (Input) | Q (Output) |
+|------------|-----------|------------|
+| ↑ Rising   |     0     |     0      |
+| ↑ Rising   |     1     |     1      |
+| No Edge    |     X     |   No Change|
+
+> Note: The DFF only updates on the **rising clock edge**.
+
+---
 
 # 📁 Project Structure
-and_gate/
-├── and_gate.vhd # AND gate VHDL code
-├── and_gate_tb.vhd # Testbench for simulation
-├── and_gate_waveform.png # AND gate Waveform
+06_flip_flops
+├── D_FlipFlop
+│ └── D_FlipFlop.vhd           # Main VHDL Module for D FlipFlop
+│ └── D_FlipFlop_tb.vhd        # Testbench for simulation
+│ └── d_flip_flop_waveform.PNG # AND gate Waveform
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
