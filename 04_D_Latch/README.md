@@ -1,30 +1,35 @@
-# D Flip-Flop (DFF) in VHDL
+# D Latch in VHDL
 ```markdown
-This repository contains the VHDL implementation of a **D Flip-Flop**, one of the fundamental building blocks in digital electronics used for edge-triggered data storage.
+This repository provides a VHDL implementation of a **D Latch**, an essential memory element used in sequential digital circuits.
 
-## 🧠 What is a D Flip-Flop?
+## 🧠 What is a D Latch?
 
-A **D Flip-Flop** (Data or Delay Flip-Flop) stores and transfers the value of the input `D` to the output `Q` **only on the rising (or falling) edge** of a clock signal. It is widely used in registers, counters, and memory elements.
+A **D Latch** (Data Latch) is a level-sensitive storage device. When the **enable** signal is active (`EN = 1`), the output `Q` follows the input `D`. When **enable** is low, the output retains its last value.
 
+### 🧪 Truth Table
 
-### Truth Table
+| Enable (EN) | D (Input) | Q (Output) |
+|-------------|-----------|------------|
+|     0       |     X     |   No Change |
+|     1       |     0     |     0       |
+|     1       |     1     |     1       |
 
-| Clock Edge | D (Input) | Q (Output) |
-|------------|-----------|------------|
-| ↑ Rising   |     0     |     0      |
-| ↑ Rising   |     1     |     1      |
-| No Edge    |     X     |   No Change|
-
-> Note: The DFF only updates on the **rising clock edge**.
+> **Note:** The D Latch is **level-sensitive**, not edge-triggered like a flip-flop.
 
 ---
 
 # 📁 Project Structure
 06_flip_flops
-├── D_FlipFlop
-│ └── D_FlipFlop.vhd           # Main VHDL Module for D FlipFlop
-│ └── D_FlipFlop_tb.vhd        # Testbench for simulation
-│ └── d_flip_flop_waveform.PNG # AND gate Waveform
+├── D_Latch
+│ └── D_Latch_Behavioral.vhd           # Main VHDL Behavioral Module for D_Latch
+│ └── D_Latch_Behavioral_tb.vhd        # Testbench for D_Latch Behavioral Module simulation
+│ └── D_Latch_Behavioral.PNG           # D_Latch Behavioral Module Waveform
+│ └── D_Latch_Dataflow.vhd             # Main VHDL Dataflow Module for D_Latch
+│ └── D_Latch_Dataflow_tb.vhd          # Testbench for D_Latch Dataflow Module simulation
+│ └── D_Latch_Dataflow.PNG             # D_Latch Dataflow Module Waveform
+│ └── D_Latch_Structural.vhd           # Main VHDL Structural Module for D_Latch
+│ └── D_Latch_Structural_tb.vhd        # Testbench for D_Latch Structural Module simulation
+│ └── D_Latch_Structural.PNG           # D_Latch Structural Module Waveform
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
