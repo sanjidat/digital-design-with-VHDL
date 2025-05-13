@@ -1,30 +1,35 @@
-# D Flip-Flop (DFF) in VHDL
+# SR Flip-Flop (Set-Reset Flip-Flop) - VHDL Implementation
 ```markdown
-This repository contains the VHDL implementation of a **D Flip-Flop**, one of the fundamental building blocks in digital electronics used for edge-triggered data storage.
+This repository contains the VHDL implementation and testbench for an **SR Flip-Flop**, a fundamental sequential logic circuit used in digital electronics.
 
-## 🧠 What is a D Flip-Flop?
+## 📘 Description
 
-A **D Flip-Flop** (Data or Delay Flip-Flop) stores and transfers the value of the input `D` to the output `Q` **only on the rising (or falling) edge** of a clock signal. It is widely used in registers, counters, and memory elements.
+An **SR Flip-Flop** (Set-Reset Flip-Flop) is a simple memory element with two inputs:
 
+- **S (Set)**: Sets the output to 1.
+- **R (Reset)**: Resets the output to 0.
+
+The flip-flop stores a bit of data until the inputs are changed and is often used in sequential circuits like latches, registers, and counters.
 
 ### Truth Table
 
-| Clock Edge | D (Input) | Q (Output) |
-|------------|-----------|------------|
-| ↑ Rising   |     0     |     0      |
-| ↑ Rising   |     1     |     1      |
-| No Edge    |     X     |   No Change|
+| S | R | Q (next) | Description       |
+|---|---|-----------|-------------------|
+| 0 | 0 | Q (no change) | Hold state        |
+| 0 | 1 | 0         | Reset             |
+| 1 | 0 | 1         | Set               |
+| 1 | 1 | Invalid   | Not allowed       |
 
-> Note: The DFF only updates on the **rising clock edge**.
+> **Note:** The (1,1) condition is considered invalid or forbidden in basic SR flip-flop design.
 
 ---
 
 # 📁 Project Structure
 06_flip_flops
-├── D_FlipFlop
-│ └── D_FlipFlop.vhd           # Main VHDL Module for D FlipFlop
-│ └── D_FlipFlop_tb.vhd        # Testbench for simulation
-│ └── d_flip_flop_waveform.PNG # AND gate Waveform
+├── S_R_FlipFlop
+│ └── SR_FlipFlop.vhd           # Main VHDL Module for SR FlipFlop
+│ └── SR_FlipFlop_tb.vhd        # Testbench for simulation
+│ └── S_R_FlipFlop_Waveform.PNG # SR FlipFlop Waveform
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
