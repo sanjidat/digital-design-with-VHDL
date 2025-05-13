@@ -24,7 +24,7 @@ A **D Flip-Flop** (Data or Delay Flip-Flop) stores and transfers the value of th
 ├── D_FlipFlop
 │ └── D_FlipFlop.vhd           # Main VHDL Module for D FlipFlop
 │ └── D_FlipFlop_tb.vhd        # Testbench for simulation
-│ └── d_flip_flop_waveform.PNG # AND gate Waveform
+│ └── d_flip_flop_waveform.PNG # D FlipFlop Waveform
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
