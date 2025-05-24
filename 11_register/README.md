@@ -1,81 +1,47 @@
-# Basic Logic Gates (VHDL)
+# Register Modules in VHDL
+
+## 📘 Overview
 ```markdown
-This project demonstrates the implementation of the fundamental **Logic Gates** using **VHDL**. The following gates are included:
+This repository contains two VHDL modules that implement commonly used **registers** in digital systems:
 
-- AND Gate
-- OR Gate
-- XOR Gate
-- NOT Gate (Inverter)
+- `left_to_right_shift_register`: A basic shift register shifting data from left to right.
+- `universal_shift_register_4_bit`: A 4-bit universal shift register that supports multiple modes including hold, shift left, shift right, and parallel load.
 
-Each gate is implemented in VHDL, and corresponding testbenches are provided for simulation.
+These components are essential building blocks in digital design for tasks such as data storage, serial-to-parallel conversion, and configurable data routing.
+---
+## 🔧 Features
 
-## 🔍 Overview of Logic Gates
+### 🌀 Left-to-Right Shift Register
+- Shifts input data from **left to right**
+- Clock-controlled operation
+- Resettable
+- Simple and educational design
 
-### 1. AND Gate
-The **AND Gate** is a digital logic gate that outputs `1` only when all of its inputs are `1`. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     0       |
-| 1 | 0 |     0       |
-| 1 | 1 |     1       |
-
-### 2. OR Gate
-The **OR Gate** is a digital logic gate that outputs `1` if at least one of its inputs is `1`. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     1       |
-| 1 | 0 |     1       |
-| 1 | 1 |     1       |
-
-### 3. XOR Gate
-The **XOR Gate** (Exclusive OR) is a digital logic gate that outputs `1` if the number of `1` inputs is odd. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     1       |
-| 1 | 0 |     1       |
-| 1 | 1 |     0       |
-
-### 4. NOT Gate
-The **NOT Gate** (Inverter) is a digital logic gate that inverts its input. If the input is `1`, the output will be `0`, and if the input is `0`, the output will be `1`.
-
-**Truth Table:**
-| A | Output (Y) |
-|---|-------------|
-| 0 |     1       |
-| 1 |     0       |
+### 🔁 4-bit Universal Shift Register
+- Supports 4 modes:
+  - **Hold**
+  - **Shift Left**
+  - **Shift Right**
+  - **Parallel Load**
+- Controlled by a 2-bit mode signal
+- Asynchronous reset
+- Useful for configurable data operations
 
 ---
-## 📁 Project Structure
+## 📁 File Structure
 
-basic_gates/
-├── and_gate/
-│ ├── and_gate.vhd # AND Gate VHDL code
-│ ├── and_gate_tb.vhd # AND Gate Testbench
-│ ├── and_gate_waveform.png # AND Gate Waveform
+11_register/
+├── left_to_right_shift_register/
+│ ├── README.md
+│ ├── left_to_right_shift_register_waveform.PNG   # Waveform
+│ ├── shift_register.vhd #  VHDL code
+│ ├── shift_register_tb.vhd # testbench
 │
-├── or_gate/
-│ ├── or_gate.vhd # OR Gate VHDL code
-│ ├── or_gate_tb.vhd # OR Gate Testbench
-│ ├── or_gate_waveform.png # OR Gate Waveform
-│
-├── xor_gate/
-│ ├── xor_gate.vhd # XOR Gate VHDL code
-│ ├── xor_gate_tb.vhd # XOR Gate Testbench
-│ ├── xor_gate_waveform.png # XOR Gate Waveform
-│
-├── not_gate/
-│ ├── not_gate.vhd # NOT Gate VHDL code
-│ ├── not_gate_tb.vhd # NOT Gate Testbench
-│ ├── not_gate_waveform.png # NOT Gate Waveform
+├── universal_shift_register_4_bit/
+│ ├── README.md
+│ ├── universal_shift_register_waveform.png #  Waveform
+│ ├── universal_shift_register.vhd # VHDL code
+│ ├── universal_shift_register_tb.vhd # Testbench
 
 
 ## How to Simulate
@@ -89,6 +55,5 @@ Use Xilinx ISE, ModelSim, or Vivado:
 
 More modules will be added as I progress through the course.
 
-This `README.md` provides an overview of the project, the individual gates, their truth tables, and instructions on how to simulate the VHDL code for each gate. It's suitable for a GitHub repository and can help users understand and use the logic gate implementations effectively.
-
+This `README.md` provides an overview of the project and instructions on how to simulate the VHDL code. 
 Let me know if you'd like any additional information or improvements!
