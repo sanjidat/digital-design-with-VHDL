@@ -27,7 +27,7 @@ These components are essential building blocks in digital design for tasks such 
 - Asynchronous reset
 - Useful for configurable data operations
 
----
+```markdown
 ## 📁 File Structure
 
 11_register/
