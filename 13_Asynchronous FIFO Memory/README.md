@@ -6,9 +6,7 @@ This project implements an **Asynchronous FIFO (First-In First-Out)** memory in 
 This is a typical structure used in digital systems to buffer data between two subsystems running on different clocks, such as between an ADC and a processor or between different communication interfaces.
 
 ---
-![Alt text]([images/asynchronous-fifo.png](https://github.com/sanjidat/digital-design-with-VHDL/blob/main/13_Asynchronous%20FIFO%20Memory/images/asynchronous-fifo.png))
-
-![asynchronous-fifo](https://github.com/user-attachments/assets/9d675f0a-cb2b-429c-a605-1b2f56fbfa03)
+https://github.com/sanjidat/digital-design-with-VHDL/blob/main/13_Asynchronous%20FIFO%20Memory/images/asynchronous-fifo.png
 
 ## Features
 
