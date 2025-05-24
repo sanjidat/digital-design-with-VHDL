@@ -6,7 +6,7 @@ This project implements an **Asynchronous FIFO (First-In First-Out)** memory in 
 This is a typical structure used in digital systems to buffer data between two subsystems running on different clocks, such as between an ADC and a processor or between different communication interfaces.
 
 ---
-![Online Image](https://github.com/user-attachments/assets/e354a8e9-15ee-469a-a418-6d9f049a1a57)
+![FIFO Architecture](13_Asynchronous FIFO Memory/images/asynchronous-fifo.png)
 
 
 ## Features
