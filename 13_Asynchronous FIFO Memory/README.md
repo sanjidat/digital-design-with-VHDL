@@ -1,5 +1,5 @@
 # Asynchronous FIFO in VHDL
-```markdown
+
 ## Overview
 This project implements an **Asynchronous FIFO (First-In First-Out)** memory in VHDL. The design supports separate clock domains for read and write operations and uses Gray code pointers with double synchronization to ensure reliable operation across asynchronous boundaries.
 
