@@ -1,7 +1,7 @@
 # Register Modules in VHDL
 
 ## 📘 Overview
-```markdown
+
 This repository contains two VHDL modules that implement commonly used **registers** in digital systems:
 
 - `left_to_right_shift_register`: A basic shift register shifting data from left to right.
