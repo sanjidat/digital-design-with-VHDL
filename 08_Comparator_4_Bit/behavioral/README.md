@@ -1,5 +1,5 @@
 # 🔍 4-Bit Comparator
-```markdown
+
 # 4-Bit Comparator — Behavioral Modeling 
 This module implements a 4-bit comparator using **behavioral modeling** in VHDL. It determines whether one 4-bit binary input is greater than, equal to, or less than another input using a process-based approach.
 
@@ -45,12 +45,13 @@ end process;
 - **Testbench**: Included and simulates multiple input cases
 
 # 📂 Files
-
+<pre>
 07_Comparator_4_Bit/
 ├── behavioral/
 ├── comparator_4bit_behavioral.vhd -- Behavioral architecture of the comparator
 ├── comparator_4bit_behavioral_tb.vhd -- Testbench for simulating and verifying the design
 └── README.md -- This documentation
+<\pre>
 
 ## 🧪 Simulation Results
 
