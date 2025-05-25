@@ -28,6 +28,7 @@ For each project, you’ll find:
 - Xilinx ISE/ ISIM (Simulation tools)
 
 ## ⚙️ How It Works
+
 ´´´vhdl
 Given a 4-bit binary input, the module converts it to 4-bit Gray Code using the formula:
 
