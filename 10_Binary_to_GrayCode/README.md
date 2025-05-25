@@ -29,7 +29,7 @@ For each project, you’ll find:
 
 ## ⚙️ How It Works
 
-´´´vhdl
+```vhdl
 Given a 4-bit binary input, the module converts it to 4-bit Gray Code using the formula:
 
 gray(3) <= bin(3);
