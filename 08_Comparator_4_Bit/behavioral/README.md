@@ -10,6 +10,15 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - `E` = 1 if A = B
 - `L` = 1 if A < B
 
+# 📂 Files
+<pre>
+07_Comparator_4_Bit/
+├── behavioral/
+├── comparator_4bit_behavioral.vhd -- Behavioral architecture of the comparator
+├── comparator_4bit_behavioral_tb.vhd -- Testbench for simulating and verifying the design
+└── README.md -- This documentation
+<\pre>
+
 ## 🔧 Module Overview
 
 ### 📥 Inputs:
@@ -43,15 +52,6 @@ end process;
 - **Components Used**: NOT, AND (2- to 5-input), OR4, XNOR
 - **Tools**: Xilinx ISE, ISim
 - **Testbench**: Included and simulates multiple input cases
-
-# 📂 Files
-<pre>
-07_Comparator_4_Bit/
-├── behavioral/
-├── comparator_4bit_behavioral.vhd -- Behavioral architecture of the comparator
-├── comparator_4bit_behavioral_tb.vhd -- Testbench for simulating and verifying the design
-└── README.md -- This documentation
-<\pre>
 
 ## 🧪 Simulation Results
 
