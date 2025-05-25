@@ -16,9 +16,10 @@ This module implements a **4-bit comparator** using **dataflow modeling** in VHD
 
 07_Comparator_4_Bit/
 dataflow/
-├── comparator_4bit_dataflow.vhd # Dataflow model of the 4-bit comparator
-├── comparator_4bit_dataflow_tb.vhd # Testbench for simulation
-└── README.md # This file
+├── comparator_4bit_dataflow.vhd       # Dataflow model of the 4-bit comparator
+├── comparator_4bit_dataflow_tb.vhd    # Testbench for simulation
+├── comparator_4_bit_waveform.vhd      # waveform
+└── README.md                          # This file
 
 🧪 Testbench
 The provided testbench (comparator_4bit_dataflow_tb.vhd) simulates various combinations of inputs to validate the comparator behavior, including:
