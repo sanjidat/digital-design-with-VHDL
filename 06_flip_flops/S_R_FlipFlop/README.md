@@ -30,6 +30,7 @@ The flip-flop stores a bit of data until the inputs are changed and is often use
 │ └── SR_FlipFlop.vhd           # Main VHDL Module for SR FlipFlop
 │ └── SR_FlipFlop_tb.vhd        # Testbench for simulation
 │ └── S_R_FlipFlop_Waveform.PNG # SR FlipFlop Waveform
+└──   README.md                 # This File
 </pre>
 
 ▶️ How to Simulate
