@@ -32,7 +32,7 @@ It is a versatile component commonly used in complex digital systems such as mic
 | `11`         | Parallel Load   |
 
 ---
-```markdown
+
 # 📁 Project Structure
 <pre>
 11_register
