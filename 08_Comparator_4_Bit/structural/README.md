@@ -1,5 +1,5 @@
 # 🔍 4-Bit Comparator
-```markdown
+
 # 4-Bit Comparator (Structural VHDL - Xilinx ISE)
 This project implements a **4-bit digital comparator** in **structural VHDL**, using basic logic gate components like `XNOR`, `AND`, `NOT`, and `OR`. The design was created and simulated using **Xilinx ISE**.
 
@@ -18,20 +18,22 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 - **Testbench**: Included and simulates multiple input cases
 
 # 📂 Files
-
+<pre>
 07_Comparator_4_Bit/
 ├── structural/
 │ ├── comparator_4bit.vhd # Top-level structural comparator
 │ ├── components/
-│ │ ├── and_gate.vhd # 2-input AND gate component
-│ │ ├── and3_gate.vhd # 3-input AND gate component
-│ │ ├── and4_gate.vhd # 4-input AND gate component
-│ │ ├── and5_gate.vhd # 5-input AND gate component
-│ │ ├── not_gate.vhd # NOT gate component
-│ │ ├── or4_gate.vhd # 4-input OR gate component
-│ │ ├── xnor_gate.vhd # XNOR gate component
-│ ├── comparator_4bit_tb.vhd # Testbench
-│ └── README.md
+│ │ ├── and_gate.vhd              # 2-input AND gate component
+│ │ ├── and3_gate.vhd             # 3-input AND gate component
+│ │ ├── and4_gate.vhd             # 4-input AND gate component
+│ │ ├── and5_gate.vhd             # 5-input AND gate component
+│ │ ├── not_gate.vhd              # NOT gate component
+│ │ ├── or4_gate.vhd              # 4-input OR gate component
+│ │ ├── xnor_gate.vhd             # XNOR gate component
+│ ├── comparator_4bit_tb.vhd      # Testbench
+│ ├── comparator_4_bit_waveform   # waveform
+│ └── README.md                   # This file
+</pre>
 
 ## 🧪 Simulation Results
 
