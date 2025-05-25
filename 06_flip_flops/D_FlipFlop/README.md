@@ -1,5 +1,5 @@
 # D Flip-Flop (DFF) in VHDL
-```markdown
+
 This repository contains the VHDL implementation of a **D Flip-Flop**, one of the fundamental building blocks in digital electronics used for edge-triggered data storage.
 
 ## 🧠 What is a D Flip-Flop?
@@ -18,13 +18,14 @@ A **D Flip-Flop** (Data or Delay Flip-Flop) stores and transfers the value of th
 > Note: The DFF only updates on the **rising clock edge**.
 
 ---
-
 # 📁 Project Structure
+<pre>
 06_flip_flops
 ├── D_FlipFlop
 │ └── D_FlipFlop.vhd           # Main VHDL Module for D FlipFlop
 │ └── D_FlipFlop_tb.vhd        # Testbench for simulation
 │ └── d_flip_flop_waveform.PNG # D FlipFlop Waveform
+</pre>
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
