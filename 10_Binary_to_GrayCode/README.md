@@ -1,5 +1,5 @@
 # Binary to Gray Code Converter (VHDL)
-```markdown
+
 This project implements a **4-bit Binary to Gray Code converter** using VHDL, along with a testbench to verify functionality.
 
 ## 🧠 What is Gray Code?
@@ -7,11 +7,12 @@ This project implements a **4-bit Binary to Gray Code converter** using VHDL, al
 Gray Code is a binary numeral system where two successive values differ by only one bit. It's commonly used in digital encoders, error correction, and analog to digital conversion to prevent spurious outputs.
 
 ## 📁 Project Structure
-
+<pre>
 09_Binary_to_GrayCode/
 ├── binary_to_gray_code.vhd # Main VHDL module (Behavioral architecture)
 ├── binary_to_gray_code_tb.vhd # Testbench for simulation
 ├── binary to gray code Waveform.png # Waveform
+</pre>
 
 ### How to Run Simulations
 
