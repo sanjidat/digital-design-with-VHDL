@@ -27,20 +27,9 @@ These components are essential building blocks in digital design for tasks such 
 - Asynchronous reset
 - Useful for configurable data operations
 
-🧠 Applications
-  - Data buffering and storage
 
-  - Serial-to-parallel or parallel-to-serial data conversion
-
-  - Arithmetic and logic operations
-
-  - State machines and counters
-
-
-
-```markdown
 ## 📁 File Structure
-
+<pre>
 11_register/
 ├── left_to_right_shift_register/
 │ ├── README.md
@@ -53,6 +42,16 @@ These components are essential building blocks in digital design for tasks such 
 │ ├── universal_shift_register_waveform.png #  Waveform
 │ ├── universal_shift_register.vhd # VHDL code
 │ ├── universal_shift_register_tb.vhd # Testbench
+</pre>
+
+🧠 Applications
+  - Data buffering and storage
+
+  - Serial-to-parallel or parallel-to-serial data conversion
+
+  - Arithmetic and logic operations
+
+  - State machines and counters
 
 
 ## How to Simulate
