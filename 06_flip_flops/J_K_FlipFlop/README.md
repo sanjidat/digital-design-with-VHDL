@@ -1,45 +1,69 @@
-# SR Flip-Flop (Set-Reset Flip-Flop) - VHDL Implementation
-```markdown
-This repository contains the VHDL implementation and testbench for an **SR Flip-Flop**, a fundamental sequential logic circuit used in digital electronics.
+# 🔁 JK Flip-Flop (VHDL)
 
-## 📘 Description
+## 📝 Overview
 
-An **SR Flip-Flop** (Set-Reset Flip-Flop) is a simple memory element with two inputs:
-
-- **S (Set)**: Sets the output to 1.
-- **R (Reset)**: Resets the output to 0.
-
-The flip-flop stores a bit of data until the inputs are changed and is often used in sequential circuits like latches, registers, and counters.
-
-### Truth Table
-
-| S | R | Q (next) | Description       |
-|---|---|-----------|-------------------|
-| 0 | 0 | Q (no change) | Hold state        |
-| 0 | 1 | 0         | Reset             |
-| 1 | 0 | 1         | Set               |
-| 1 | 1 | Invalid   | Not allowed       |
-
-> **Note:** The (1,1) condition is considered invalid or forbidden in basic SR flip-flop design.
+This project implements a **JK Flip-Flop** using VHDL. A JK flip-flop is a fundamental memory element used in sequential digital circuits. It is an enhancement of the SR flip-flop that eliminates the invalid condition and provides toggling functionality.
 
 ---
 
-# 📁 Project Structure
-06_flip_flops
-├── S_R_FlipFlop
-│ └── SR_FlipFlop.vhd           # Main VHDL Module for SR FlipFlop
-│ └── SR_FlipFlop_tb.vhd        # Testbench for simulation
-│ └── S_R_FlipFlop_Waveform.PNG # SR FlipFlop Waveform
+## ⚙️ Features
 
-▶️ How to Simulate
-Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
-Add both .vhd files to your project.
-Run the simulation on and_gate_tb.
-Observe the output waveform or console results.
+- Standard JK flip-flop behavior:
+  - **J = 0, K = 0** → No change
+  - **J = 0, K = 1** → Reset
+  - **J = 1, K = 0** → Set
+  - **J = 1, K = 1** → Toggle
+- Synchronous with rising clock edge
+- Asynchronous reset input
+- Synthesizable design
+- Verified with testbench and simulation
 
-## Tools Used
+---
+### Truth Table
+
+| J | K | Q (next)      | Description       |
+|---|---|---------------|-------------------|
+| 0 | 0 | Q (no change) | Hold state        |
+| 0 | 1 | 0             | Reset             |
+| 1 | 0 | 1             | Set               |
+| 1 | 1 | Toggle        | Toggle            |
+
+## 📁 Project Structure
+
+<pre>
+jk_flip_flop/
+├── jk_flip_flop.vhd           # Main JK Flip-Flop VHDL module
+├── jk_flip_flop_tb.vhd        # Testbench for simulation
+├── jk_flip_flop_waveform.PNG  # Simulation waveform output
+└── README.md                  # Documentation
+</pre>
+
+---
+
+## 🧪 How to Simulate
+
+1. Open your preferred VHDL simulator (e.g., **ModelSim**, **Vivado**, **GHDL**).
+2. Add both `jk_flip_flop.vhd` and `jk_flip_flop_tb.vhd` to your project.
+3. Run the simulation using the testbench.
+4. Inspect the waveform to verify correct JK flip-flop behavior.
+
+---
+
+## 🔄 Applications
+
+- Binary counters
+- Frequency dividers
+- Finite State Machines (FSMs)
+- Basic sequential logic components
+
+---
+
+## 🧰 Tools Used
+
 - VHDL (IEEE STD_LOGIC_1164)
-- Xilinx ISE / ISIM (Simulation tools)
+- Xilinx ISE / Vivado or any simulator supporting VHDL
+
+---
 
 🙋‍♀️ Author Developed by Sanjida Orin Tawhid
 
