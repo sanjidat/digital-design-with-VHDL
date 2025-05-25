@@ -31,7 +31,6 @@ For each project, you’ll find:
 
 Given a 4-bit binary input, the module converts it to 4-bit Gray Code using the formula:
 
-```vhdl
 gray(3) <= bin(3);
 gray(2) <= bin(3) xor bin(2);
 gray(1) <= bin(2) xor bin(1);
