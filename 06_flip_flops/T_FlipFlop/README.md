@@ -1,36 +1,45 @@
-# SR Flip-Flop (Set-Reset Flip-Flop) - VHDL Implementation
-```markdown
-This repository contains the VHDL implementation and testbench for an **SR Flip-Flop**, a fundamental sequential logic circuit used in digital electronics.
+# 🔁 T Flip-Flop - VHDL Implementation
 
-## 📘 Description
+## 📝 Overview
 
-An **SR Flip-Flop** (Set-Reset Flip-Flop) is a simple memory element with two inputs:
+This project implements a **T (Toggle) Flip-Flop** using VHDL. The T flip-flop is a fundamental sequential logic device that changes its output state on each clock pulse when its T input is high. It is commonly used in counters and frequency divider circuits.
 
-- **S (Set)**: Sets the output to 1.
-- **R (Reset)**: Resets the output to 0.
+---
+## ⚙️ Features
 
-The flip-flop stores a bit of data until the inputs are changed and is often used in sequential circuits like latches, registers, and counters.
+- **Toggle behavior** when T = 1
+- **No change** when T = 0
+- Synchronous operation with rising clock edge
+- Asynchronous reset functionality
+- Synthesizable and testbench-verified design
+- Ideal for use in sequential circuits and digital systems
 
-### Truth Table
-
-| S | R | Q (next) | Description       |
-|---|---|-----------|-------------------|
-| 0 | 0 | Q (no change) | Hold state        |
-| 0 | 1 | 0         | Reset             |
-| 1 | 0 | 1         | Set               |
-| 1 | 1 | Invalid   | Not allowed       |
-
-> **Note:** The (1,1) condition is considered invalid or forbidden in basic SR flip-flop design.
+---
+| **T (Toggle Input)** | **Clock Edge** | **Q (Next State)** | **Description**    |
+| -------------------- | -------------- | ------------------ | ------------------ |
+| 0                    | ↑ (Rising)     | Q (No Change)      | Hold current state |
+| 1                    | ↑ (Rising)     | Q' (Toggle)        | Toggle the output  |
 
 ---
 
-# 📁 Project Structure
-06_flip_flops
-├── S_R_FlipFlop
-│ └── SR_FlipFlop.vhd           # Main VHDL Module for SR FlipFlop
-│ └── SR_FlipFlop_tb.vhd        # Testbench for simulation
-│ └── S_R_FlipFlop_Waveform.PNG # SR FlipFlop Waveform
+## 📁 Project Structure
+<pre>
+t_flip_flop/
+├── t_flip_flop.vhd           # Main T Flip-Flop VHDL module
+├── t_flip_flop_tb.vhd        # Testbench for simulation
+├── t_flip_flop_waveform.PNG  # Output waveform image
+└── README.md                 # Documentation
+</pre>
 
+---
+## 🔄 Applications
+
+- Binary counters
+- Clock dividers
+- Toggle-based control systems
+- Sequential timing circuits
+
+---
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
 Add both .vhd files to your project.
