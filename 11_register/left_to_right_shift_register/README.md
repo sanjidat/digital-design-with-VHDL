@@ -25,8 +25,16 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 │ └── README.md
 │ └── shift_register.vhd                            # Main VHDL Module 
 │ └── shift_register_tb.vhd                         # Testbench for simulation
-│ └── left_to_right_shift_register_Waveform.PNG     # SR FlipFlop Waveform
+│ └── left_to_right_shift_register_Waveform.PNG     # Waveform
 
+🧠 Applications
+- Serial data transmission and reception
+
+- Signal delay buffers
+
+- Finite State Machine (FSM) implementation
+
+- Basic data path operations
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
