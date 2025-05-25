@@ -28,7 +28,7 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 │ └── left_to_right_shift_register_Waveform.PNG     # Waveform
 
 
-\#🧠 Applications
+\🧠 Applications
 - Serial data transmission and reception
 
 - Signal delay buffers
