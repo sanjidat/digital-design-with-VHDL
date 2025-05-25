@@ -18,8 +18,7 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 
 ---
 
-```markdown
-# 📁 Project Structure
+##📁 Project Structure
 11_register
 ├── left_to_right_shift_register
 │ └── README.md
@@ -28,7 +27,7 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 │ └── left_to_right_shift_register_Waveform.PNG     # Waveform
 
 
-\🧠 Applications
+🧠 Applications
 - Serial data transmission and reception
 
 - Signal delay buffers
