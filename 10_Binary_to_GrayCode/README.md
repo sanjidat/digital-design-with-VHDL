@@ -9,9 +9,9 @@ Gray Code is a binary numeral system where two successive values differ by only 
 ## 📁 Project Structure
 <pre>
 09_Binary_to_GrayCode/
-├── binary_to_gray_code.vhd # Main VHDL module (Behavioral architecture)
-├── binary_to_gray_code_tb.vhd # Testbench for simulation
-├── binary to gray code Waveform.png # Waveform
+├── binary_to_gray_code.vhd             # Main VHDL module (Behavioral architecture)
+├── binary_to_gray_code_tb.vhd          # Testbench for simulation
+├── binary to gray code Waveform.png    # Waveform
 </pre>
 
 ### How to Run Simulations
