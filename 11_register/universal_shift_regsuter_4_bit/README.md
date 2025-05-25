@@ -34,12 +34,14 @@ It is a versatile component commonly used in complex digital systems such as mic
 ---
 ```markdown
 # 📁 Project Structure
+<pre>
 11_register
 ├── universal_shift_register_4_bit
 │ └── README.md
 │ └── universal_shift_register.vhd           # Main VHDL Module 
 │ └── universal_shift_register_tb.vhd        # Testbench for simulation
 │ └── universal_shift_register_Waveform.PNG  # Waveform
+</pre>
 
 🧠 Applications
 - CPU and ALU registers
