@@ -27,7 +27,7 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 │ └── shift_register_tb.vhd                         # Testbench for simulation
 │ └── left_to_right_shift_register_Waveform.PNG     # Waveform
 
----
+```markdown
 
 
 🧠 Applications
