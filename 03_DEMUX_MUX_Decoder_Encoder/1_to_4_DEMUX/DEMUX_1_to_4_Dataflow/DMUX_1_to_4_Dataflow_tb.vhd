@@ -32,14 +32,14 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY DMUX_4_to_1_Df_tb IS
-END DMUX_4_to_1_Df_tb;
+ENTITY DMUX_1_to_4_Df_tb IS
+END DMUX_1_to_4_Df_tb;
  
-ARCHITECTURE behavior OF DMUX_4_to_1_Df_tb IS 
+ARCHITECTURE behavior OF DMUX_1_to_4_Df_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT DMUX_4_to_1_Dataflow
+    COMPONENT DMUX_1_to_4_Dataflow
     PORT(
          d : IN  std_logic;
          s : IN  std_logic_vector(1 downto 0);
@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF DMUX_4_to_1_Df_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DMUX_4_to_1_Dataflow PORT MAP (
+   uut: DMUX_1_to_4_Dataflow PORT MAP (
           d => d,
           s => s,
           y => y

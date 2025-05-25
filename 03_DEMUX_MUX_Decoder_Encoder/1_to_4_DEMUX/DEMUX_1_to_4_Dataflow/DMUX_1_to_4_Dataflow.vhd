@@ -29,20 +29,20 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity DMUX_4_to_1_Dataflow is
+entity DMUX_1_to_4_Dataflow is
     Port ( d : in  STD_LOGIC;
            s : in  STD_LOGIC_VECTOR (1 downto 0);
            y : out  STD_LOGIC_VECTOR (3 downto 0));
-end DMUX_4_to_1_Dataflow;
+end DMUX_1_to_4_Dataflow;
 
-architecture Dataflow of DMUX_4_to_1_Dataflow is
+architecture Dataflow of DMUX_1_to_4_Dataflow is
 
 begin
 
-y(0) <= d and not s(0) and not s(1);
-y(1) <= d and not s(0) and s(1);
-y(2) <= d and s(0) and not s(1);
-y(3) <= d and s(0) and s(1);
+y(0) <= d and not s(1) and not s(0);
+y(1) <= d and not s(1) and s(0);
+y(2) <= d and s(1) and not s(0);
+y(3) <= d and s(1) and s(0);
 
 end Dataflow;
 
