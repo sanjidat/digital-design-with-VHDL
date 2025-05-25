@@ -19,13 +19,14 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 ---
 
 ## 📁 Project Structure
+<pre>
 11_register
 ├── left_to_right_shift_register
 │ └── README.md
 │ └── shift_register.vhd                            # Main VHDL Module 
 │ └── shift_register_tb.vhd                         # Testbench for simulation
 │ └── left_to_right_shift_register_Waveform.PNG     # Waveform
-
+</pre>
 
 🧠 Applications
 - Serial data transmission and reception
