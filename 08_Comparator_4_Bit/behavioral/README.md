@@ -14,9 +14,10 @@ Compare two 4-bit binary numbers (`A` and `B`) and output:
 <pre>
 07_Comparator_4_Bit/
 ├── behavioral/
-├── comparator_4bit_behavioral.vhd -- Behavioral architecture of the comparator
-├── comparator_4bit_behavioral_tb.vhd -- Testbench for simulating and verifying the design
-└── README.md -- This documentation
+├── comparator_4bit_behavioral.vhd     -- Behavioral architecture of the comparator
+├── comparator_4bit_behavioral_tb.vhd  -- Testbench for simulating and verifying the design
+├── comparator_4bit_waveform.vhd       -- waveform
+└── README.md                          -- This documentation
 </pre>
 
 ## 🔧 Module Overview
