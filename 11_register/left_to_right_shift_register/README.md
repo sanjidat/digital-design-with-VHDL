@@ -18,7 +18,7 @@ This simple design is ideal for learning how sequential circuits and bit manipul
 
 ---
 
-##📁 Project Structure
+## 📁 Project Structure
 11_register
 ├── left_to_right_shift_register
 │ └── README.md
