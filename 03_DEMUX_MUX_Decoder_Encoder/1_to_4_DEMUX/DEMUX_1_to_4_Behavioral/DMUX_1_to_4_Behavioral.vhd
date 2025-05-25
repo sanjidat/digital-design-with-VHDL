@@ -29,13 +29,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity DMUX_4_to_1_Behavioral is
+entity DMUX_1_to_4_Behavioral is
     Port ( d : in  STD_LOGIC;
            s : in  STD_LOGIC_VECTOR (1 downto 0);
            y : out  STD_LOGIC_VECTOR (3 downto 0));
-end DMUX_4_to_1_Behavioral;
+end DMUX_1_to_4_Behavioral;
 
-architecture Behavioral of DMUX_4_to_1_Behavioral is
+architecture Behavioral of DMUX_1_to_4_Behavioral is
 
 begin
 

@@ -32,14 +32,14 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY DMUX_4_to_1_BV_tb IS
-END DMUX_4_to_1_BV_tb;
+ENTITY DMUX_1_to_4_BV_tb IS
+END DMUX_1_to_4_BV_tb;
  
-ARCHITECTURE behavior OF DMUX_4_to_1_BV_tb IS 
+ARCHITECTURE behavior OF DMUX_1_to_4_BV_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT DMUX_4_to_1_Behavioral
+    COMPONENT DMUX_1_to_4_Behavioral
     PORT(
          d : IN  std_logic;
          s : IN  std_logic_vector(1 downto 0);
@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF DMUX_4_to_1_BV_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DMUX_4_to_1_Behavioral PORT MAP (
+   uut: DMUX_1_to_4_Behavioral PORT MAP (
           d => d,
           s => s,
           y => y
