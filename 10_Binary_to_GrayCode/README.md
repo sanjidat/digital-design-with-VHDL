@@ -40,13 +40,13 @@ gray(0) <= bin(1) xor bin(0);
 🧪 Simulation
 The testbench applies various input values and checks the output:
 
-Binary Input	Expected Gray Code
-0000	0000
-0001	0001
-0010	0011
-0100	0110
-1010	1111
-1100	1010
+Binary_Input	Expected_Gray_Code
+    0000	          0000
+    0001	          0001
+    0010	          0011
+    0100	          0110
+    1010	          1111
+    1100	          1010
 
 Use ModelSim, Vivado, or GHDL to run the simulation.
 
