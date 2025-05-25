@@ -1,5 +1,5 @@
 # SR Flip-Flop (Set-Reset Flip-Flop) - VHDL Implementation
-```markdown
+
 This repository contains the VHDL implementation and testbench for an **SR Flip-Flop**, a fundamental sequential logic circuit used in digital electronics.
 
 ## 📘 Description
@@ -23,13 +23,14 @@ The flip-flop stores a bit of data until the inputs are changed and is often use
 > **Note:** The (1,1) condition is considered invalid or forbidden in basic SR flip-flop design.
 
 ---
-
 # 📁 Project Structure
+<pre>
 06_flip_flops
 ├── S_R_FlipFlop
 │ └── SR_FlipFlop.vhd           # Main VHDL Module for SR FlipFlop
 │ └── SR_FlipFlop_tb.vhd        # Testbench for simulation
 │ └── S_R_FlipFlop_Waveform.PNG # SR FlipFlop Waveform
+</pre>
 
 ▶️ How to Simulate
 Open your preferred VHDL simulator (e.g., Xilinx ISE, ModelSim, Vivado, GHDL).
