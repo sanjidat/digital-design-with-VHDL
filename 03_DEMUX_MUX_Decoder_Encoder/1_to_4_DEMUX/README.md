@@ -1,81 +1,51 @@
-# Basic Logic Gates (VHDL)
-```markdown
-This project demonstrates the implementation of the fundamental **Logic Gates** using **VHDL**. The following gates are included:
+# 🔀 4-Bit Data Routing Modules (MUX, DEMUX, Encoder, Decoder)
 
-- AND Gate
-- OR Gate
-- XOR Gate
-- NOT Gate (Inverter)
+This repository contains basic data routing logic modules implemented in VHDL, including:
+- 4-bit Multiplexer (MUX)
+- 4-bit Demultiplexer (DEMUX)
+- 4-bit Encoder
+- 4-bit Decoder
 
-Each gate is implemented in VHDL, and corresponding testbenches are provided for simulation.
+Each module is implemented using **three different modeling styles**:
+- **Behavioral**
+- **Dataflow**
+- **Structural**
 
-## 🔍 Overview of Logic Gates
+These are essential components in digital logic design, used for directing data paths and simplifying logic control.
 
-### 1. AND Gate
-The **AND Gate** is a digital logic gate that outputs `1` only when all of its inputs are `1`. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     0       |
-| 1 | 0 |     0       |
-| 1 | 1 |     1       |
-
-### 2. OR Gate
-The **OR Gate** is a digital logic gate that outputs `1` if at least one of its inputs is `1`. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     1       |
-| 1 | 0 |     1       |
-| 1 | 1 |     1       |
-
-### 3. XOR Gate
-The **XOR Gate** (Exclusive OR) is a digital logic gate that outputs `1` if the number of `1` inputs is odd. Otherwise, the output is `0`.
-
-**Truth Table:**
-| A | B | Output (Y) |
-|---|---|-------------|
-| 0 | 0 |     0       |
-| 0 | 1 |     1       |
-| 1 | 0 |     1       |
-| 1 | 1 |     0       |
-
-### 4. NOT Gate
-The **NOT Gate** (Inverter) is a digital logic gate that inverts its input. If the input is `1`, the output will be `0`, and if the input is `0`, the output will be `1`.
-
-**Truth Table:**
-| A | Output (Y) |
-|---|-------------|
-| 0 |     1       |
-| 1 |     0       |
-
----
 ## 📁 Project Structure
 
-basic_gates/
-├── and_gate/
-│ ├── and_gate.vhd # AND Gate VHDL code
-│ ├── and_gate_tb.vhd # AND Gate Testbench
-│ ├── and_gate_waveform.png # AND Gate Waveform
-│
-├── or_gate/
-│ ├── or_gate.vhd # OR Gate VHDL code
-│ ├── or_gate_tb.vhd # OR Gate Testbench
-│ ├── or_gate_waveform.png # OR Gate Waveform
-│
-├── xor_gate/
-│ ├── xor_gate.vhd # XOR Gate VHDL code
-│ ├── xor_gate_tb.vhd # XOR Gate Testbench
-│ ├── xor_gate_waveform.png # XOR Gate Waveform
-│
-├── not_gate/
-│ ├── not_gate.vhd # NOT Gate VHDL code
-│ ├── not_gate_tb.vhd # NOT Gate Testbench
-│ ├── not_gate_waveform.png # NOT Gate Waveform
+03_DEMUX_MUX_Decoder_Encoder/
+├── 1_to_4_DEMUX/
+│ ├── DEMUX_1_to_4_Behavioral/
+│ │  ├── DEMUX_1 _to_4_Behavioral.PNG
+│ │  ├── DEMUX_1 _to_4_Behavioral.vhd
+│ │  ├── DEMUX_1 _to_4_Behavioral_tb.vhd
+│ │  └── README.md
+│ ├── DEMUX_1_to_4_Dataflow/
+│ │  ├── DEMUX_1 _to_4_Dataflow.PNG
+│ │  ├── DEMUX_1 _to_4_Dataflow.vhd
+│ │  ├── DEMUX_1 _to_4_Dataflow_tb.vhd
+│ │  └── README.md
+│ ├── DEMUX_1_to_4_Structural/
+│ │  ├── DEMUX_1 _to_4_Structural.PNG
+│ │  ├── DEMUX_1 _to_4_Structural.vhd
+│ │  ├── DEMUX_1 _to_4_Structural_tb.vhd
+│ │  └── README.md
+├── encoder_4bit/
+│ ├── encoder_behavioral.vhd
+│ ├── encoder_dataflow.vhd
+│ ├── encoder_structural.vhd
+│ ├── encoder_4bit_tb.vhd
+│ └── README.md
+├── decoder_4bit/
+│ ├── decoder_behavioral.vhd
+│ ├── decoder_dataflow.vhd
+│ ├── decoder_structural.vhd
+│ ├── decoder_4bit_tb.vhd
+│ └── README.md
+└── README.md ← (this file)
+---
 
 
 ## How to Simulate
