@@ -48,6 +48,24 @@ These are essential components in digital logic design, used for directing data 
 </pre>
 ---
 
+## 📦 Included Modules
+
+### ➤ 4-bit Multiplexer (MUX)
+- Selects one of several input lines and forwards it to the output.
+- Controlled using select lines.
+
+### ➤ 4-bit Demultiplexer (DEMUX)
+- Directs a single input to one of many outputs based on select signals.
+
+### ➤ 4-bit Encoder
+- Converts one-hot input lines into a binary code.
+
+### ➤ 4-bit Decoder
+- Converts binary input into a one-hot output.
+
+## 🧪 Testbenches
+Each module includes a testbench file (`*_tb.vhd`) that provides input stimuli and verifies functional correctness via simulation.
+
 
 ## How to Simulate
 Use Xilinx ISE, ModelSim, or Vivado:
