@@ -14,7 +14,7 @@ Each module is implemented using **three different modeling styles**:
 These are essential components in digital logic design, used for directing data paths and simplifying logic control.
 
 ## 📁 Project Structure
-
+<pre>
 03_DEMUX_MUX_Decoder_Encoder/
 ├── 1_to_4_DEMUX/
 │ ├── DEMUX_1_to_4_Behavioral/
@@ -45,6 +45,7 @@ These are essential components in digital logic design, used for directing data 
 │ ├── decoder_4bit_tb.vhd
 │ └── README.md
 └── README.md ← (this file)
+</pre>
 ---
 
 
