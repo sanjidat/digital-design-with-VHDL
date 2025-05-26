@@ -32,12 +32,22 @@ These are essential components in digital logic design, used for directing data 
 │ │  ├── DEMUX_1 _to_4_Structural.vhd
 │ │  ├── DEMUX_1 _to_4_Structural_tb.vhd
 │ │  └── README.md
-├── encoder_4bit/
-│ ├── encoder_behavioral.vhd
-│ ├── encoder_dataflow.vhd
-│ ├── encoder_structural.vhd
-│ ├── encoder_4bit_tb.vhd
-│ └── README.md
+├── 4_to_1_MUX/
+│ ├── MUX_4_to_1_Behavioral/
+│ │  ├── MUX_4_to_1_Behavioral.PNG
+│ │  ├── MUX_4_to_1_Behavioral.vhd
+│ │  ├── MUX_4_to_1_Behavioral_tb.vhd
+│ │  └── README.md
+│ ├── MUX_4_to_1_Dataflow/
+│ │  ├── MUX_4_to_1_dataflow.PNG
+│ │  ├── MUX_4_to_1_dataflow.vhd
+│ │  ├── MUX_4_to_1_dataflow_tb.vhd
+│ │  └── README.md
+│ ├── MUX_4_to_1_Structural/
+│ │  ├── MUX_4_to_1_Structural.PNG
+│ │  ├── MUX_4_to_1_Structural.vhd
+│ │  ├── MUX_4_to_1_Structural_tb.vhd
+│ │  └── README.md
 ├── decoder_4bit/
 │ ├── decoder_behavioral.vhd
 │ ├── decoder_dataflow.vhd
