@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   03:22:26 05/01/2025
+-- Create Date:   21:38:20 05/17/2025
 -- Design Name:   
--- Module Name:   /home/ise/vm/DMUX_4_to_1_Structural/DMUX_4_to_1_St_tb.vhd
--- Project Name:  DMUX_4_to_1_Structural
+-- Module Name:   /home/ise/vm/DMUX_1_to_4_Structural/DMUX_1_to_4_Structural_tb.vhd
+-- Project Name:  DMUX_1_to_4_Structural
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: DMUX_4_to_1_Structural
+-- VHDL Test Bench Created by ISE for module: DMUX_1_to_4_Structural
 -- 
 -- Dependencies:
 -- 
@@ -32,14 +32,14 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY DMUX_4_to_1_St_tb IS
-END DMUX_4_to_1_St_tb;
+ENTITY DMUX_1_to_4_Structural_tb IS
+END DMUX_1_to_4_Structural_tb;
  
-ARCHITECTURE behavior OF DMUX_4_to_1_St_tb IS 
+ARCHITECTURE behavior OF DMUX_1_to_4_Structural_tb IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT DMUX_4_to_1_Structural
+    COMPONENT DMUX_1_to_4_Structural
     PORT(
          d : IN  std_logic;
          s : IN  std_logic_vector(1 downto 0);
@@ -62,7 +62,7 @@ ARCHITECTURE behavior OF DMUX_4_to_1_St_tb IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DMUX_4_to_1_Structural PORT MAP (
+   uut: DMUX_1_to_4_Structural PORT MAP (
           d => d,
           s => s,
           y => y
@@ -76,7 +76,7 @@ BEGIN
 --		<clock> <= '1';
 --		wait for <clock>_period/2;
 --   end process;
- 
+-- 
 
    -- Stimulus process
    stim_proc: process
@@ -87,19 +87,21 @@ BEGIN
 --      wait for <clock>_period*10;
 
       -- insert stimulus here 
-	d <= '1';
-	s <= "00";
-	wait for 200ns;
+		d <= '1';
+		s <= "00";
+		wait for 200ns;
 	
-	s <= "01";
-	wait for 200ns;
-	
-	s <= "10";
-	wait for 200ns;
-	
-	s <= "11";
-	wait for 200ns;
-	
+		d <= '1';
+		s <= "01";
+		wait for 200ns;
+		
+		d <= '1';
+		s <= "10";
+		wait for 200ns;
+		
+		d <= '1';
+		s <= "11";
+		wait for 200ns;
       wait;
    end process;
 
