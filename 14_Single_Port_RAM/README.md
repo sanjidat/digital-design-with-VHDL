@@ -1,7 +1,7 @@
 🧠 Single Port RAM in VHDL
 
 This project implements a Single Port RAM module in VHDL, allowing both read and write operations using a single clock, address, and data interface. It includes behavioral simulation and waveform analysis to verify functionality.
-
+---
 📌 Features
 - 8-bit address line → Supports up to 256 memory locations (the design can be changed for smaller sizes like 7x8 RAM).
 
@@ -12,7 +12,7 @@ This project implements a Single Port RAM module in VHDL, allowing both read and
 - Enable and Read/Write (rd_wr) control lines.
 
 - Supports Behavioral modeling.
-
+---
 📐 VHDL Port Description
 | Port Name  | Direction | Description                     |
 | ---------- | --------- | ------------------------------- |
@@ -22,7 +22,7 @@ This project implements a Single Port RAM module in VHDL, allowing both read and
 | `enable`   | in        | Enables read/write operation    |
 | `rd_wr`    | in        | `'1'` = write, `'0'` = read     |
 | `data_out` | out       | 8-bit data output (during read) |
-
+---
 📁 Project Structure
 <pre>
   14_Single_Port_RAM/
