@@ -1,23 +1,37 @@
-# Digital Design with VHDL – Learning Portfolio
+🧠 Single Port RAM in VHDL
 
-This repository is my collection of hands-on projects and exercises from the **"Design of Digital Circuits with VHDL Programming"** course.
+This project implements a Single Port RAM module in VHDL, allowing both read and write operations using a single clock, address, and data interface. It includes behavioral simulation and waveform analysis to verify functionality.
 
-The repo includes:
-- VHDL code for various digital circuits
-- Testbenches to verify functionality
-- Simulations and results
+📌 Features
+- 8-bit address line → Supports up to 256 memory locations (the design can be changed for smaller sizes like 7x8 RAM).
 
-## Topics Covered
+- 8-bit data line → Each memory location stores 8-bit data.
 
-| Module                        | Description                     | Status |
-|-------------------------------|---------------------------------|--------|
-| 01 – Basic Gates              | AND, OR, NOT, XOR               | 🔄 In Progress |
-| 02 – Arithmetic Circuits      | Half Adder, Full Adder          | ⬜ Todo |
-| 03 – Multiplexers & Demux     | 2:1 MUX, 4:1 MUX, Demux         | ⬜ Todo |
-| 04 – Flip-Flops               | D Flip-Flop, T Flip-Flop        | ⬜ Todo |
-| 05 – Counters                 | 4-bit counter, Modulo-N counter | ⬜ Todo |
-| 06 – FSM Design               | Vending machine, Traffic light  | ⬜ Todo |
+- Synchronous operations (on clock rising edge).
 
+- Enable and Read/Write (rd_wr) control lines.
+
+- Supports Behavioral modeling.
+
+📐 VHDL Port Description
+| Port Name  | Direction | Description                     |
+| ---------- | --------- | ------------------------------- |
+| `clk`      | in        | Clock signal                    |
+| `data_in`  | in        | 8-bit data input                |
+| `ram_addr` | in        | 8-bit address input             |
+| `enable`   | in        | Enables read/write operation    |
+| `rd_wr`    | in        | `'1'` = write, `'0'` = read     |
+| `data_out` | out       | 8-bit data output (during read) |
+
+📁 Project Structure
+<pre>
+  14_Single_Port_RAM/
+├── Single_Port_RAM.vhd                 -- Main RAM module (Behavioral)
+├── Single_Port_RAM_tb.vhd              -- Testbench for simulation
+├── single_port_ram_RTL.PNG             -- RTL configuration
+├── single_port_ram_waveform.PNG        -- Waveform configuration
+└── README.md
+</pre>
 ---
 
 ### How to Run Simulations
@@ -34,5 +48,5 @@ For each project, you’ll find:
 - ModelSim / Vivado (Simulation tools)
 
 ---
-
+🙋‍♀️ Author Developed by Sanjida Orin Tawhid
 More modules will be added as I progress through the course.
