@@ -1,24 +1,31 @@
-# Digital Design with VHDL – Learning Portfolio
+# Synchronous Dual-Port RAM
 
 This repository is my collection of hands-on projects and exercises from the **"Design of Digital Circuits with VHDL Programming"** course.
 
-The repo includes:
-- VHDL code for various digital circuits
-- Testbenches to verify functionality
-- Simulations and results
+🧠 Overview
+This project demonstrates the design and simulation of a Synchronous Dual-Port RAM using VHDL. The RAM supports two independent ports (Port A and Port B) that can simultaneously read from or write to memory using a shared clock.
 
-## Topics Covered
+🧩 Features
+- 8-bit wide data lines (data_in, data_out)
+ 
+- 8-bit address space (256 locations)
 
-| Module                        | Description                     | Status |
-|-------------------------------|---------------------------------|--------|
-| 01 – Basic Gates              | AND, OR, NOT, XOR               | 🔄 In Progress |
-| 02 – Arithmetic Circuits      | Half Adder, Full Adder          | ⬜ Todo |
-| 03 – Multiplexers & Demux     | 2:1 MUX, 4:1 MUX, Demux         | ⬜ Todo |
-| 04 – Flip-Flops               | D Flip-Flop, T Flip-Flop        | ⬜ Todo |
-| 05 – Counters                 | 4-bit counter, Modulo-N counter | ⬜ Todo |
-| 06 – FSM Design               | Vending machine, Traffic light  | ⬜ Todo |
+- Independent write enables (we_a, we_b) for each port
+
+- Single shared clock (clk) for both ports
+
+- Fully synchronous behavior (writes/reads happen on rising edge of clock)
 
 ---
+## 📁 File Structure
+
+15_Dual_Port_RAM/
+├── Synchronous_Dual_Port_Memory
+│└── README.md
+│└── Synchronous_Dual_Port_RAM.vhd            # Main VHDL Module
+│└── Synchronous_Dual_Port_RAM_tb.vhd         # Testbench File
+│└── Synchronous_Dual_Port_RAM_waveform.PNG   # Waveform
+│└── Synchronous_Dual_Port_RAM_RTL.PNG        # RTL Module
 
 ### How to Run Simulations
 
