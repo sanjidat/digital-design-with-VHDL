@@ -40,8 +40,10 @@ For each project, you’ll find:
 
 ## Tools Used
 - VHDL (IEEE STD_LOGIC_1164)
-- ModelSim / Vivado (Simulation tools)
+- Xilinx ISE / ISIM (Simulation tools)
 
 ---
+
+🙋‍♀️ Author Developed by Sanjida Orin Tawhid
 
 More modules will be added as I progress through the course.
