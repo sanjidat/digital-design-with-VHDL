@@ -1,5 +1,6 @@
-🧠 Single Port RAM in VHDL
+# 🧠 Single Port RAM in VHDL
 
+## 📘 Overview
 This project implements a Single Port RAM module in VHDL, allowing both read and write operations using a single clock, address, and data interface. It includes behavioral simulation and waveform analysis to verify functionality.
 ---
 📌 Features
