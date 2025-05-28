@@ -20,12 +20,14 @@ This project demonstrates the design and simulation of a Synchronous Dual-Port R
 ## 📁 File Structure
 
 15_Dual_Port_RAM/
+<pre>
 ├── Synchronous_Dual_Port_Memory
 │└── README.md
 │└── Synchronous_Dual_Port_RAM.vhd            # Main VHDL Module
 │└── Synchronous_Dual_Port_RAM_tb.vhd         # Testbench File
 │└── Synchronous_Dual_Port_RAM_waveform.PNG   # Waveform
 │└── Synchronous_Dual_Port_RAM_RTL.PNG        # RTL Module
+</pre>
 
 ### How to Run Simulations
 
